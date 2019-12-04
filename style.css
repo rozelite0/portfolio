@@ -1,0 +1,180 @@
+.face-photo{
+    border-radius: 50%;
+}
+
+body {
+    color: #666;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    overflow: hidden;
+    padding: 5px;
+}
+
+header li {
+    display: inline-block;
+    float: right;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header img {
+    float: left;
+    height: 70px;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.top {
+    background-image: url(image/top.jpg);
+    background-size: cover;
+    padding: 200px 0; 
+}
+
+.top h1 {
+    font-size: 70px;
+    /*文字と文字の間に5pxの空白を入れる*/
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+h2 {
+    color: #333;
+    margin: 0px;
+}
+
+hr {
+    margin-bottom: 50px;
+    height: 5px;
+    width: 100px;
+    border: none;
+}
+
+.blue-line {
+    background-color: #7BC3D1;
+}
+
+.white-line {
+    background-color: #fff;
+}
+
+.about {
+    background-color: #F6F6F6;
+    padding: 100px;
+}
+
+.about img{
+    width: 200px;
+}
+
+.about table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.about table th {
+    font-weight: normal;
+}
+
+.skills{
+    background-color: #7BC3D1 ;
+    padding: 100px;
+}
+
+.box{
+    background: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 15%;
+    box-shadow: 0 0 8px gray;
+}
+
+.box img{
+    margin-top: 20px;
+    width: 60%;
+}
+
+.portfolio{
+    background-color: #F6F6F6;
+    padding: 100px;
+}
+
+.card{
+    background: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 20px;
+    width: 25%;
+    box-shadow: 0 0 8px gray;
+    transition: background 0.3s;
+    transition: width 0.3s;
+}
+
+.card:hover{
+    background: #b5eaf5;
+    width: 28%;
+    height: 28%;
+    transition: 0.3s;
+}
+
+.card img{
+    border-radius: 5px 5px;
+    max-width: 100%;
+}
+
+.card h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+.app-overview{
+    background: #fff;
+    height: 50px;
+    position: relative;
+    box-shadow: 0px 0px 0px 5px #7BC3D1;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+    color: #454545;
+}
+.app-overview:after{
+    position: absolute;
+    content: '';
+    right: -7px;
+    top: -7px;
+    border-width: 0 15px 15px 0;
+    border-style: solid;
+    border-color: #7BC3D1 #F6F6F6 #7BC3D1;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+.app-overview p {
+    margin: 0; 
+    padding: 0;
+}
+
+.linkbox {
+    position: relative;
+}
+
+.linkbox a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
