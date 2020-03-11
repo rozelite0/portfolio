@@ -6,7 +6,7 @@ const MYWORK_WORDCOUNT = document.getElementById('myWorkWordCount');
 //ファンタジー創作キャラ製造機
 //ON
 MYWORK_FANTASY.addEventListener('mouseover', () => {
-    APP_OVERVIEW.innerHTML = "構想からコーディングまで、初めて一人で制作し、無事に完成まで持っていくことができたWebアプリ。<br>N予備校 動くWebページコンテスト2018夏に応募した物。近い内に追加したい機能がある。";
+    APP_OVERVIEW.innerHTML = "構想からコーディングまで、初めて一人で制作し、無事に完成まで持っていくことができたWebアプリ。";
 }, false);
 
 //OUT
@@ -30,7 +30,7 @@ MYWORK_WEREWOLF.addEventListener('mouseout', () => {
 //文字カウント
 //ON
 MYWORK_WORDCOUNT.addEventListener('mouseover', () => {
-    APP_OVERVIEW.innerHTML = "特筆するべきことが何もない、ただ文字数をカウントしてくれるだけのサイト。";
+    APP_OVERVIEW.innerHTML = "ただ文字数をカウントしてくれるだけのサイト。";
 }, false);
 
 //OUT
@@ -40,12 +40,12 @@ MYWORK_WORDCOUNT.addEventListener('mouseout', () => {
 
 //JQuery
 
-$(function () {
+$(function() {
     //グローバルナビの座標を取得
     var offset = $('#globalNavi').offset();
 
     /* スクロールイベント */
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         //scrollTopで現在のスクロールの縦位置を取得
         //現在の縦位置とグローバルの縦座標位置を比較して、スクロール位置がグローバルナビより下になった場合、addclass
         if ($(window).scrollTop() > offset.top) {
@@ -59,9 +59,9 @@ $(function () {
 });
 
 //ナビのリンクをクリックしたとき、スムーススクロールする
-$(function () {
+$(function() {
     //#で始まるリンクをクリックしたとき実行される
-    $('a[href^="#"]').click(function () {
+    $('a[href^="#"]').click(function() {
         //数字が増えるほど遅くなる
         var speed = 550;
         var href = $(this).attr("href");
@@ -73,7 +73,7 @@ $(function () {
 });
 
 //スクロールすると画像も少し動く
-$(window).on('scroll', function () {
+$(window).on('scroll', function() {
 
     var scrollTop = $(window).scrollTop();
     var bgPosition = scrollTop / 5; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
@@ -82,26 +82,3 @@ $(window).on('scroll', function () {
         $('#imageScroll').css('background-position', 'center top -' + bgPosition + 'px');
     }
 });
-
-//
-$(function () {
-    $('.blue-line').each(function () {
-        var $win = $(window),
-            $winH = $win.height(),
-            $connect = $(this),
-            position = $connect.offset().top,
-            current = 0,
-            scroll;
-        $win.on('load scroll', function () {
-            scroll = $win.scrollTop();
-            current = (1 - (position - scroll) / $winH) * 2 * 100;
-            if (current > 99.9) {
-                current = 100;
-            }
-            if (scroll > position - $winH) {
-                $connect.css({ width: current + '%' });
-            }
-        });
-    });
-});
-

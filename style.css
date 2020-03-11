@@ -1,4 +1,4 @@
-.face-photo{
+.face-photo {
     border-radius: 50%;
 }
 
@@ -8,6 +8,10 @@ body {
     text-align: center;
 }
 
+p {
+    color: #000;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -15,6 +19,7 @@ header {
     background-color: #333;
     overflow: hidden;
     padding: 5px;
+    z-index: 3;
 }
 
 header li {
@@ -58,7 +63,7 @@ header img {
     padding: 0 20px;
 }
 
-#imageScroll{
+#imageScroll {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -72,10 +77,14 @@ footer {
     padding: 10px;
 }
 
+footer p {
+    color: #fff;
+}
+
 .top {
     background-image: url(image/top.jpg);
     background-size: cover;
-    padding: 200px 0; 
+    padding: 200px 0;
 }
 
 .top h1 {
@@ -97,39 +106,64 @@ hr {
     border: none;
 }
 
-.blue-line {
-    background-color: #7BC3D1;
+.color-line {
+    background-color: #8A7BD1;
 }
 
 .white-line {
     background-color: #fff;
 }
 
-.about {
+.profile {
     background-color: #F6F6F6;
     padding: 100px;
 }
 
-.about img{
+.profile img {
     width: 200px;
 }
 
-.about table {
+.profile table {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
 }
 
-.about table th {
+.profile table th {
     font-weight: normal;
 }
 
-.skills{
-    background-color: #7BC3D1 ;
+.skills {
+    background-color: #8A7BD1;
     padding: 100px;
 }
 
-.box{
+.skills-content {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 40px 0 0 0;
+}
+
+.skills-content h2 {
+    padding: 0 0 10px 0;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    color: #000;
+}
+
+th {
+    padding: 10px 100px;
+}
+
+td {
+    padding: 10px 0;
+}
+
+.box {
     background: #fff;
     border-radius: 10px;
     display: inline-block;
@@ -139,17 +173,17 @@ hr {
     box-shadow: 0 0 8px gray;
 }
 
-.box img{
+.box img {
     margin-top: 20px;
     width: 60%;
 }
 
-.portfolio{
+.works {
     background-color: #F6F6F6;
     padding: 100px;
 }
 
-.card{
+.card {
     background: #fff;
     border-radius: 5px;
     display: inline-block;
@@ -160,44 +194,47 @@ hr {
     transition: width 0.3s;
 }
 
-.card:hover{
+
+/* .card:hover{
     background: #b5eaf5;
     width: 28%;
     height: 28%;
     transition: 0.3s;
-}
+} */
 
-.card img{
+.card img {
     border-radius: 5px 5px;
     max-width: 100%;
 }
 
-.card h1{
+.card h1 {
     font-size: 20px;
     text-align: center;
 }
 
-.app-overview{
+.app-overview {
     background: #fff;
     height: 50px;
     position: relative;
-    box-shadow: 0px 0px 0px 5px #7BC3D1;
+    box-shadow: 0px 0px 0px 5px #8A7BD1;
     border: dashed 2px white;
     padding: 0.2em 0.5em;
     color: #454545;
 }
-.app-overview:after{
+
+.app-overview:after {
     position: absolute;
     content: '';
     right: -7px;
     top: -7px;
     border-width: 0 15px 15px 0;
     border-style: solid;
-    border-color: #7BC3D1 #F6F6F6 #7BC3D1;
+    border-color: #8A7BD1 #F6F6F6 #8A7BD1;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
+
 .app-overview p {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -205,7 +242,7 @@ hr {
     position: relative;
 }
 
-.linkbox a{
+.linkbox a {
     position: absolute;
     top: 0;
     left: 0;
