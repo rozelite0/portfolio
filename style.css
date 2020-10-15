@@ -85,7 +85,6 @@ footer p {
 
 .top h1 {
     font-size: 70px;
-    /*文字と文字の間に5pxの空白を入れる*/
     letter-spacing: 5px;
     color: #fff;
 }
@@ -195,14 +194,6 @@ td {
     transition: background 0.3s;
     transition: width 0.3s;
 }
-
-
-/* .card:hover{
-    background: #b5eaf5;
-    width: 28%;
-    height: 28%;
-    transition: 0.3s;
-} */
 
 .card img {
     border-radius: 5px 5px;

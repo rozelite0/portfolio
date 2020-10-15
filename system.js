@@ -32,31 +32,22 @@ MYWORK_WORDCOUNT.addEventListener('mouseout', () => {
     APP_OVERVIEW.innerHTML = "";
 }, false);
 
-
-
+//メニューバー
 $(function() {
-    //グローバルナビの座標を取得
     var offset = $('#globalNavi').offset();
 
-    /* スクロールイベント */
     $(window).scroll(function() {
-        //scrollTopで現在のスクロールの縦位置を取得
-        //現在の縦位置とグローバルの縦座標位置を比較して、スクロール位置がグローバルナビより下になった場合、addclass
         if ($(window).scrollTop() > offset.top) {
             $('#globalNavi').addClass('fixed');
-            //グローバルナビより上だったらclassを削除    
         } else {
             $('#globalNavi').removeClass('fixed');
         }
     });
-    /* */
 });
 
-//ナビのリンクをクリックしたとき、スムーススクロールする
+//メニューバーの目次
 $(function() {
-    //#で始まるリンクをクリックしたとき実行される
     $('a[href^="#"]').click(function() {
-        //数字が増えるほど遅くなる
         var speed = 550;
         var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
@@ -70,7 +61,7 @@ $(function() {
 $(window).on('scroll', function() {
 
     var scrollTop = $(window).scrollTop();
-    var bgPosition = scrollTop / 5; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
+    var bgPosition = scrollTop / 5;
 
     if (bgPosition) {
         $('#imageScroll').css('background-position', 'center top -' + bgPosition + 'px');
